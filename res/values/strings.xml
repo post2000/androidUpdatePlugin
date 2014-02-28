@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="soft_update_title">软件更新</string>
+	<string name="soft_update_info">有新版本，建议更新</string>
+	<string name="soft_update_updatebtn">更新</string>
+	<string name="soft_update_later">稍后更新</string>
+	<string name="soft_updating">更新中...</string>
+	<string name="soft_update_cancel">取消</string>
+</resources>

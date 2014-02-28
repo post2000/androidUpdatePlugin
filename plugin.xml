@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.zybx.xiaofu"
+      version="0.1.0">
+    <name>apkUpdate</name>
+    <description>Sample PhoneGap Apk Update Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,android,autoupdate</keywords>
+ 
+ 
+    <js-module src="www/updateAppPlugin.js" name="UpdateApp">
+        <clobbers target="window.update" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="UpdateApp">
+				<param name="android-package" value="com.zybx.xiaofu.UpdateApp" />
+	    </feature>
+        </config-file> 
+        <source-file src="src/UpdateApp.java" target-dir="src/com/zybx/xiaofu" />      
+     </platform>          
+</plugin>
+
